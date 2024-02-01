@@ -4,16 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florian Lutz</title>
+    <style>
+      h1,
+      nav,
+      ul,
+      figure {
+        display: inline;
+      }
+      .logos {
+        width: 30%;
+        margin-inline: 2%;
+      }
+      .firstLine {
+        font-weight: bold;
+      }
+      .secLine {
+        display: inline;
+      }
+      #myFoto {
+        width: 50%;
+      }
+      #hobbiesAndLang {
+        display: inline;
+      }
+      #contact {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      #github {
+        border-radius: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: orangered;
+        font-weight: bold;
+      }
+      nav a {
+        margin-inline: 5%;
+      }
+    </style>
   </head>
   <body>
     <!--
         next steps:
-        -include foto
-        -include logos and link them
-        -create a stylesheet and make all necessary adjustments
-            -get rid of bullet points
-            -make li inline
-            -make ul inline
+        -stylesheet: make all necessary adjustments
+        -add about me and cv
+            
     -->
 
     <header>
@@ -25,30 +61,34 @@
       </nav>
     </header>
     <figure>
-      <img src="sicilia.jpg" alt="face of Florian Lutz" />
+      <img id="myFoto" src="sicilia.jpg" alt="face of Florian Lutz" />
       <figcaption>Me doing what I love to do</figcaption>
     </figure>
-    <ul>
-      <li>hobbies:</li>
+    <div id="hobbiesAndLang">
       <ul>
-        <li>reading books</li>
-        <li>riding bikes</li>
-        <li>plaing the ukulele</li>
-        <li>listening to MPB</li>
+        <li class="firstLine">hobbies</li>
+        <ul>
+          <li class="secLine">reading books</li>
+          <li class="secLine">riding bikes</li>
+          <li class="secLine">plaing the ukulele</li>
+          <li class="secLine">listening to MPB</li>
+        </ul>
+        <li class="firstLine">languages</li>
+        <ul>
+          <li class="secLine">Portuguese</li>
+          <li class="secLine">English</li>
+          <li class="secLine">Spanisch</li>
+          <li class="secLine">German</li>
+          <li class="secLine">JavaScript</li>
+        </ul>
       </ul>
-      <li>languages:</li>
-      <ul>
-        <li>Portuguese</li>
-        <li>English</li>
-        <li>Spanisch</li>
-        <li>German</li>
-        <li>JavaScript</li>
-      </ul>
-    </ul>
+    </div>
     <section id="contact">
       Mobile: 01234-753155
       <a href="mailto:mailme@mailme.com">mailme@mailme.com</a><br />
-      LinkedIn GitHub XING
+      <img class="logos" src="linkedin.png" alt="LinkedIn" />
+      <img class="logos" src="xing.png" alt="Xing" />
+      <img class="logos" id="github" src="github.png" alt="GitHub" />
     </section>
     <section id="links"></section>
     <section id="about me">
