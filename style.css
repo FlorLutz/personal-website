@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Until here can be a good default
+  for etting up stylesheets. It gets rid of eventual margins, paddings
+  and makes size calculations easier since elements don't grow to the outside but aplly
+  changes to inside in size.*/
+  /* font-size: 10px;
+  border: solid black 1px; */
+}
+
+h1,
+nav,
+ul {
+  display: inline;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 10px;
+  color: darkred;
+}
+
+h2 {
+  margin: 10px;
+  color: rgb(170, 48, 3);
+}
+
+nav a {
+  margin-inline: 5px;
+}
+
+figcaption {
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.links {
+  text-decoration: none;
+  color: orangered;
+  font-weight: bold;
+}
+.links:hover {
+  background-color: beige;
+  border-radius: 10%;
+  padding: 2px;
+}
+
+.logos {
+  height: 100px;
+  margin-inline: 10px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.logos:hover {
+  height: 120px;
+}
+.firstLine {
+  font-weight: bold;
+  background-color: rgb(253, 153, 116);
+  border-radius: 5px;
+  padding: 2px;
+}
+.secLine {
+  display: inline;
+  background-color: beige;
+  border-radius: 5px;
+}
+.myFoto {
+  width: 300px;
+  border-radius: 20px;
+}
+.hobbiesAndLang {
+  display: inline;
+}
+.contact {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.year {
+  font-weight: bold;
+  padding-right: 20px;
+}

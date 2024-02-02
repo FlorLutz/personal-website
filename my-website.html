@@ -3,56 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Florian Lutz</title>
-    <style>
-      h1,
-      nav,
-      ul,
-      figure {
-        display: inline;
-        margin-left: 0;
-      }
-      .logos {
-        height: 100px;
-        margin-inline: 10px;
-        margin-top: 20px;
-        border-radius: 50%;
-      }
-      .firstLine {
-        font-weight: bold;
-        background-color: rgb(253, 153, 116);
-        border-radius: 5px;
-        padding: 2px;
-      }
-      .secLine {
-        display: inline;
-        background-color: beige;
-        border-radius: 5px;
-      }
-      #myFoto {
-        width: 300px;
-        border-radius: 20px;
-      }
-      #hobbiesAndLang {
-        display: inline;
-      }
-      #contact {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-      a {
-        text-decoration: none;
-        color: orangered;
-        font-weight: bold;
-      }
-      nav a {
-        margin-inline: 5%;
-      }
-      .year {
-        font-weight: bold;
-        padding-right: 20px;
-      }
-    </style>
   </head>
   <body>
     <!--
@@ -65,16 +17,16 @@
     <header>
       <h1>Florian Lutz</h1>
       <nav>
-        <a href="#contact">Contact</a>
-        <a href="#about me">About me</a>
-        <a href="#cv">Biography</a>
+        <a href="#contact" class="links">Contact</a>
+        <a href="#about me" class="links">About me</a>
+        <a href="#cv" class="links">Biography</a>
       </nav>
     </header>
     <figure>
-      <img id="myFoto" src="sicilia.jpg" alt="face of Florian Lutz" />
+      <img class="myFoto" src="sicilia.jpg" alt="face of Florian Lutz" />
       <figcaption>Me doing what I do</figcaption>
     </figure>
-    <div id="hobbiesAndLang">
+    <div class="hobbiesAndLang">
       <ul>
         <li class="firstLine">hobbies</li>
         <ul>
@@ -93,9 +45,9 @@
         </ul>
       </ul>
     </div>
-    <section id="contact">
+    <section id="contact" class="contact">
       Mobile: 01234-753155
-      <a href="mailto:mailme@mailme.com">mailme@mailme.com</a><br />
+      <a href="mailto:mailme@mailme.com" class="links">mailme@mailme.com</a><br />
       <a href="https://de.linkedin.com/"
         ><img class="logos" src="linkedin.png" alt="LinkedIn"
       /></a>
@@ -106,12 +58,11 @@
         ><img class="logos" id="github" src="github.png" alt="GitHub"
       /></a>
     </section>
-    <section id="links"></section>
     <section id="about me">
       <h2>About me</h2>
       <article>
-        <h3>Current works</h3>
-        <p>
+        <details>
+          <summary>Current works</summary>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
           deserunt quis expedita illum quos omnis iste, aspernatur maiores
           consectetur sunt fugit magni sed dolore impedit hic id inventore
@@ -123,12 +74,9 @@
           error non eius esse consequuntur dignissimos nisi atque quo eaque
           soluta, labore nihil harum magnam provident repudiandae aut blanditiis
           culpa! Fugiat corrupti accusantium, quae officia fuga aliquam nam
-          consectetur.
-        </p>
-      </article>
-      <article>
-        <h3>Former experience</h3>
-        <p>
+          consectetur.</details>
+      <details>
+        <summary>Former experience</summary>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           ad quasi debitis iste quas cupiditate cum recusandae rem. Eveniet iure
           nemo, enim deserunt, at corrupti rerum natus debitis quidem unde
@@ -136,8 +84,7 @@
           blanditiis accusantium delectus dolores itaque eligendi. Placeat
           accusamus consequuntur veritatis nulla temporibus doloribus quaerat,
           corrupti cum nemo quidem voluptas optio quam ut.
-        </p>
-      </article>
+      </details>
     </section>
     <section>
       <h2 id="cv">CV</h2>
