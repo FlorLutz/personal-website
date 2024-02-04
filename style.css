@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid black; */
   /* Until here can be a good default
   for etting up stylesheets. It gets rid of eventual margins, paddings
   and makes size calculations easier since elements don't grow to the outside but aplly
@@ -16,19 +17,27 @@ ul {
   display: inline;
 }
 
+body {
+  margin-left: 10px;
+}
+
 h1 {
   font-size: 3rem;
   margin: 10px;
   color: darkred;
 }
 
+header {
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  background-color: blanchedalmond;
+  border-radius: 5px;
+}
+
 h2 {
   margin: 10px;
   color: rgb(170, 48, 3);
-}
-
-nav a {
-  margin-inline: 5px;
 }
 
 figcaption {
@@ -37,37 +46,61 @@ figcaption {
   font-size: 0.8rem;
 }
 
-.links {
+section {
+  width: 750px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.nav {
   text-decoration: none;
   color: orangered;
   font-weight: bold;
+  margin-inline: 5px;
 }
+
 .links:hover {
   background-color: beige;
   border-radius: 10%;
-  padding: 2px;
+  font-size: 120%;
 }
 
 .logos {
-  height: 100px;
+  height: 200px;
   margin-inline: 10px;
   margin-top: 20px;
   border-radius: 50%;
 }
+
 .logos:hover {
-  height: 120px;
+  height: 220px;
 }
 .firstLine {
   font-weight: bold;
   background-color: rgb(253, 153, 116);
   border-radius: 5px;
   padding: 2px;
+  list-style-type: none;
 }
+
+ul ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
 .secLine {
   display: inline;
   background-color: beige;
+  padding: 2px;
+  margin: 2px;
   border-radius: 5px;
 }
+
 .myFoto {
   width: 300px;
   border-radius: 20px;
